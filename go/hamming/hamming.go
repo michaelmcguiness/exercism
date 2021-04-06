@@ -14,7 +14,7 @@ func Distance(a, b string) (int, error) {
 	}
 	for pos, char := range a {
 		if char != int32(b[pos]) {
-			dist += 1
+			dist++
 		}
 	}
 	return dist, nil
